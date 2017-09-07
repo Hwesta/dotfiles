@@ -1,0 +1,24 @@
+[user]
+	name = Holly Becker
+	email = becker.holly@gmail.com
+[color]
+	ui = true
+	status = auto
+	diff = auto
+	branch = auto
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	unstage = reset HEAD
+	diffc = diff --cached
+	stl = stash list
+	delbranch = push origin --delete
+[push]
+	default = current
+[branch]
+	autosetuprebase = always
+[help]
+	autocorrect = 3
