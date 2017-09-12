@@ -1,17 +1,12 @@
-
-# VirtualFish - fish virtualenvwrapper
-set -g VIRTUALFISH_COMPAT_ALIASES # uncomment for virtualenvwrapper-style commands
-. /usr/share/virtualfish/virtual.fish
-# optional plugins
-. /usr/share/virtualfish/auto_activation.fish
-# . ~/bin/virtualfish/global_requirements.fish
-
 set -xg WORKON_HOME ~/.virtualenv
 
 set -xg EDITOR '/usr/bin/vim'
 
+# VirtualFish - fish virtualenvwrapper
+eval (python -m virtualfish compat_aliases auto_activation)
+
 # ssh-agent
-set -xg SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+eval (ssh-agent -c)
 
 # IBus
 set -xg GTK_IM_MODULE ibus
