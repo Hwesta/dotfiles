@@ -36,6 +36,9 @@ set autoread
 " Syntax highlighting on by default
 syntax on
 
+" Tell vim my background is dark so it doesn't use the bad blue
+set background=dark
+
 " Screen and vim and scrollwheel on mouse play nice
 set mouse=a             " hold shift to copy xterm
 set ttymouse=xterm2     " necessary for gnu screen & mouse
