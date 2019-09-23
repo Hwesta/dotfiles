@@ -1,0 +1,80 @@
+{
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "selection",
+    "explorer.autoReveal": false,
+    "files.autoSave": "onFocusChange",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.autoStash": true,
+    "window.restoreWindows": "all",
+    "workbench.colorTheme": "fairyfloss",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorCustomizations": {
+        "editor.findMatchBackground": "#ffb8d155",
+    },
+    "[ruby]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoClosingBrackets": "always",
+        "editor.autoClosingQuotes": "always",
+        "editor.defaultFormatter": "misogi.ruby-rubocop",
+    },
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
+    "gitlens.menus": {
+        "editor": {
+            "blame": false,
+            "clipboard": true,
+            "compare": true,
+            "details": false,
+            "history": false,
+            "remote": false
+        },
+        "editorGroup": {
+            "blame": true,
+            "compare": true
+        },
+        "editorTab": false,
+        "explorer": {
+            "clipboard": false,
+            "compare": false,
+            "history": false,
+            "remote": true
+        },
+        "scmGroup": {
+            "compare": true,
+            "openClose": true,
+            "stash": true,
+            "stashInline": true
+        },
+        "scmItem": {
+            "clipboard": true,
+            "compare": false,
+            "history": false,
+            "remote": true,
+            "stash": true
+        }
+    },
+    "gitlens.keymap": "alternate",
+    "gitlens.blame.highlight.locations": [
+        "line",
+        "overview",
+        "gutter"
+    ],
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers"
+    ],
+    "gitlens.codeLens.enabled": false,
+    "gitlens.heatmap.toggleMode": "window",
+    "gitlens.recentChanges.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "vscode-erb-beautify.keepBlankLines": 1,
+}

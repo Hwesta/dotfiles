@@ -1,0 +1,21 @@
+Auto Add Brackets in String Interpolation
+Docker
+DotENV
+endwise
+ERB Formatter/Beautify
+fairyfloss
+GitLens
+Python
+Rails
+Rainbow CSV
+Ruby
+Ruby Haml
+Ruby Language Colorization
+Ruby on Rails
+Ruby Solargraph
+ruby-rubocop
+ruby-symbols
+Sublime Text Keymap and Settings
+vscode-gemfile
+vscode-icons
+YAML
