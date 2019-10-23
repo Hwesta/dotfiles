@@ -1,5 +1,5 @@
 function fish_prompt --description 'Write out the prompt'
-	
+
 	set -l last_status $status
 
 	# Virtualenv
@@ -15,7 +15,7 @@ function fish_prompt --description 'Write out the prompt'
 	if not set -q __fish_prompt_normal
 		set -g __fish_prompt_normal (set_color normal)
 	end
-	
+
 	if not set -q -g __fish_classic_git_functions_defined
 		set -g __fish_classic_git_functions_defined
 
@@ -25,14 +25,14 @@ function fish_prompt --description 'Write out the prompt'
 				commandline -f repaint ^/dev/null
 			end
 		end
-		
+
 		function __fish_repaint_host --on-variable fish_color_host --description "Event handler, repaint when fish_color_host changes"
 			if status --is-interactive
 				set -e __fish_prompt_host
 				commandline -f repaint ^/dev/null
 			end
 		end
-		
+
 		function __fish_repaint_status --on-variable fish_color_status --description "Event handler; repaint when fish_color_status changes"
 			if status --is-interactive
 				set -e __fish_prompt_status

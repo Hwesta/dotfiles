@@ -6,15 +6,17 @@ set -xg EDITOR '/usr/bin/vim'
 eval (python -m virtualfish compat_aliases auto_activation)
 
 # ssh-agent
-eval (ssh-agent -c)
+if status --is-interactive
+	eval (ssh-agent -c)
+end
 
 # IBus
 set -xg GTK_IM_MODULE ibus
-set -xg XMODIFIERS @im ibus
+set -xg XMODIFIERS @im=ibus
 set -xg QT_IM_MODULE ibus
 
 # Git pager
-set -xg LESS
+set -xg LESS eFRX
 
 # NPM
 set -xg NPM_PACKAGES $HOME/.npm-packages
