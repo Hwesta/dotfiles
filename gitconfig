@@ -16,6 +16,8 @@
 	diffc = diff --cached
 	stl = stash list
 	delbranch = push origin --delete
+[pull]
+	rebase = true
 [push]
 	default = current
 [branch]
