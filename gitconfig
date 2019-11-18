@@ -8,6 +8,7 @@
 	branch = auto
 [core]
 	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
 [alias]
 	st = status
 	co = checkout
@@ -16,6 +17,9 @@
 	diffc = diff --cached
 	stl = stash list
 	delbranch = push origin --delete
+	commitfix = commit --fixup
+[fetch]
+	prune = true
 [pull]
 	rebase = true
 [push]
