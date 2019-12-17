@@ -5,6 +5,7 @@ endwise
 ERB Formatter/Beautify
 fairyfloss
 GitLens
+Highlight Dodgy Characters
 Python
 Rails
 Rainbow CSV
