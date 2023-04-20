@@ -1,3 +1,4 @@
 *.html diff=html
 *.py diff=python
 *.rb diff=ruby
+*.rake diff=ruby

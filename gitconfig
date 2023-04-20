@@ -9,12 +9,14 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
+	commentChar = auto
 [alias]
 	st = status
 	co = checkout
 	br = branch
-	unstage = reset HEAD
-	diffc = diff --cached
+	sw = switch
+	unstage = restore --staged
+	diffc = diff --staged
 	stl = stash list
 	delbranch = push origin --delete
 	commitfix = commit --fixup
@@ -28,3 +30,5 @@
 	autosetuprebase = always
 [help]
 	autocorrect = 3
+[commit]
+	verbose = true
