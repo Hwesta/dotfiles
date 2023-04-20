@@ -1,9 +1,12 @@
-set -xg WORKON_HOME ~/.virtualenv
-
 set -xg EDITOR '/usr/bin/vim'
 
 # VirtualFish - fish virtualenvwrapper
-eval (python -m virtualfish compat_aliases auto_activation)
+# Use same virtualenv location as pipenv
+set -xg VIRTUALFISH_HOME ~/.local/share/virtualenvs
+# pipenv completions
+eval (env _PIPENV_COMPLETE=fish_source pipenv)
+# disable double prompt - if you do this, uncomment virtualenv in fish_prompt
+# set -xg VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # ssh-agent
 if status --is-interactive
