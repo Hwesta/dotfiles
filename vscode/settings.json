@@ -10,7 +10,6 @@
     "git.autoStash": true,
     "python.autoComplete.addBrackets": true,
     "python.formatting.provider": "black",
-    "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "window.restoreWindows": "all",
     "workbench.colorTheme": "fairyfloss",
@@ -25,11 +24,9 @@
         "editor.autoClosingQuotes": "always",
         "editor.defaultFormatter": "misogi.ruby-rubocop",
     },
-    "gitlens.views.repositories.location": "scm",
-    "gitlens.views.fileHistory.location": "scm",
-    "gitlens.views.lineHistory.location": "scm",
-    "gitlens.views.compare.location": "scm",
-    "gitlens.views.search.location": "scm",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
     "gitlens.menus": {
         "editor": {
             "blame": false,
@@ -76,10 +73,5 @@
     ],
     "gitlens.codeLens.enabled": false,
     "gitlens.heatmap.toggleMode": "window",
-    "gitlens.recentChanges.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "vscode-erb-beautify.keepBlankLines": 1,
+    "gitlens.hovers.enabled": false
 }
