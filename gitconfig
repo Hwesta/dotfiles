@@ -20,6 +20,9 @@
 	stl = stash list
 	delbranch = push origin --delete
 	commitfix = commit --fixup
+	rbc = rebase --continue
+	rbab = rebase --abort
+	rbasq = rebase -i --autosquash
 [fetch]
 	prune = true
 [pull]
