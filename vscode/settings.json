@@ -1,44 +1,71 @@
 {
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.wordWrap": "on",
     "editor.renderWhitespace": "selection",
-    "editor.rulers": [80,120],
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
     "explorer.autoReveal": false,
+    "explorer.excludeGitIgnore": true,
     "files.autoSave": "onFocusChange",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git.autoStash": true,
-    "python.autoComplete.addBrackets": true,
-    "python.formatting.provider": "black",
-    "python.linting.flake8Enabled": true,
+    "redhat.telemetry.enabled": false,
     "window.restoreWindows": "all",
     "workbench.colorTheme": "fairyfloss",
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorCustomizations": {
         "editor.findMatchBackground": "#ffb8d155",
     },
+    "workbench.editor.tabSizing": "shrink",
+    "[html]": {
+        "editor.formatOnType": false
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": false,
+    },
+    "python.testing.pytestEnabled": true,
+    "black-formatter.importStrategy": "fromEnvironment",
+    "isort.check": true,
+    "mypy-type-checker.importStrategy": "fromEnvironment",
     "[ruby]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.autoClosingBrackets": "always",
         "editor.autoClosingQuotes": "always",
-        "editor.defaultFormatter": "misogi.ruby-rubocop",
     },
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
+    "sql-formatter.uppercase": true,
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
+        "editor.formatOnSave": false
     },
     "gitlens.menus": {
         "editor": {
-            "blame": false,
-            "clipboard": true,
+            "blame": true,
+            "clipboard": false,
             "compare": true,
-            "details": false,
             "history": false,
-            "remote": false
+            "remote": false,
+            "details": false
         },
         "editorGroup": {
             "blame": true,
             "compare": true
+        },
+        "editorGutter": {
+            "compare": true,
+            "remote": true,
+            "share": true
         },
         "editorTab": false,
         "explorer": {
@@ -47,31 +74,55 @@
             "history": false,
             "remote": true
         },
+        "ghpr": {
+            "worktree": true
+        },
+        "scm": {
+            "graph": true
+        },
+        "scmRepositoryInline": {
+            "graph": true
+        },
+        "scmRepository": {
+            "authors": true,
+            "generateCommitMessage": true,
+            "graph": false
+        },
+        "scmGroupInline": {
+            "stash": true
+        },
         "scmGroup": {
             "compare": true,
             "openClose": true,
             "stash": true,
             "stashInline": true
         },
+        "scmItemInline": {
+            "stash": false
+        },
         "scmItem": {
             "clipboard": true,
             "compare": false,
             "history": false,
             "remote": true,
+            "share": true,
             "stash": true
         }
     },
-    "gitlens.keymap": "alternate",
+    "gitlens.advanced.fileHistoryFollowsRenames": true,
     "gitlens.blame.highlight.locations": [
         "line",
         "overview",
         "gutter"
     ],
+    "gitlens.codeLens.enabled": false,
     "gitlens.codeLens.scopes": [
         "document",
         "containers"
     ],
-    "gitlens.codeLens.enabled": false,
     "gitlens.heatmap.toggleMode": "window",
-    "gitlens.hovers.enabled": false
+    "gitlens.hovers.enabled": false,
+    "gitlens.keymap": "alternate",
+    "gitlens.plusFeatures.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
 }
