@@ -35,3 +35,5 @@
 	autocorrect = 3
 [commit]
 	verbose = true
+[merge]
+	conflictstyle = diff3
