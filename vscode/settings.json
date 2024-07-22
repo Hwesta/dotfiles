@@ -1,14 +1,15 @@
 {
+    "cSpell.language": "en,en-CA,en-US",
     "debug.allowBreakpointsEverywhere": true,
     "debug.console.acceptSuggestionOnEnter": "on",
     "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
     "editor.renderWhitespace": "selection",
     "editor.rulers": [
         80,
         120
     ],
-    "editor.formatOnSave": true,
     "editor.wordWrap": "on",
     "explorer.autoReveal": false,
     "explorer.excludeGitIgnore": true,
@@ -17,7 +18,9 @@
     "files.trimTrailingWhitespace": true,
     "git.autoStash": true,
     "redhat.telemetry.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
     "window.restoreWindows": "all",
+    "workbench.activityBar.location": "top",
     "workbench.colorTheme": "fairyfloss",
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorCustomizations": {
@@ -33,22 +36,37 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnType": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.isort": "always"
+        }
     },
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.diagnosticSeverityOverrides": { // Prefer mypy over pylance
+        "reportOptionalMemberAccess": "none",
+        "reportGeneralTypeIssues": "none"
+    },
+    "python.experiments.optOutFrom": [
+        "pythonTestAdapter" // Broke pytest
+    ],
     "python.testing.pytestEnabled": true,
-    "black-formatter.importStrategy": "fromEnvironment",
+    "black-formatter.showNotifications": "onWarning",
     "isort.check": true,
     "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.reportingScope": "workspace",
     "[ruby]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.autoClosingBrackets": "always",
         "editor.autoClosingQuotes": "always",
     },
-    "sql-formatter.uppercase": true,
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false // Don't like its formatting
     },
+    "sql-formatter.uppercase": true,
+    "yaml.customTags": [
+        "!reference sequence" // For gitlab-ci.yml
+    ],
     "gitlens.menus": {
         "editor": {
             "blame": true,
@@ -115,7 +133,7 @@
         "overview",
         "gutter"
     ],
-    "gitlens.codeLens.enabled": false,
+    "gitlens.codeLens.enabled": false, // turn off the annoying popup
     "gitlens.codeLens.scopes": [
         "document",
         "containers"
@@ -124,5 +142,4 @@
     "gitlens.hovers.enabled": false,
     "gitlens.keymap": "alternate",
     "gitlens.plusFeatures.enabled": false,
-    "vsicons.dontShowNewVersionMessage": true,
 }
