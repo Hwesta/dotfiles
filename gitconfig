@@ -2,6 +2,7 @@
 	name = Holly Becker
 	email = becker.holly@gmail.com
 [color]
+	interactive = true
 	ui = true
 	status = auto
 	diff = auto
@@ -37,3 +38,5 @@
 	verbose = true
 [merge]
 	conflictstyle = diff3
+[init]
+	defaultBranch = main
