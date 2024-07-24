@@ -5,11 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"Djaneiro",
 		"GitGutter",
 		"HTML Extended",
 		"Markdown Extended",
 		"Monokai Extended",
 		"Package Control",
+		"requirementstxt",
 		"SublimeLinter",
 		"TrailingSpaces"
 	]
