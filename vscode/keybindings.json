@@ -6,10 +6,6 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.reindentselectedlines"
-    },
-    {
         "key": "ctrl+shift+tab",
         "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
     },
@@ -32,10 +28,6 @@
     {
         "key": "alt+cmd+left",
         "command": "-workbench.action.previousEditor"
-    },
-    {
-        "key": "f10",
-        "command": "editor.action.toggleWordWrap"
     },
     {
         "key": "ctrl+h",
@@ -74,5 +66,18 @@
         "key": "c",
         "command": "git.revertSelectedRanges",
         "when": "editorTextFocus && isInDiffEditor"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.addSelectionToNextFindMatch"
     },
 ]
