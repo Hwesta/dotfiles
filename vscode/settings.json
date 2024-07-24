@@ -5,12 +5,15 @@
     "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": true,
+    "editor.hover.delay": 500,
     "editor.renderWhitespace": "selection",
     "editor.rulers": [
         80,
         120
     ],
     "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
     "explorer.autoReveal": false,
     "explorer.excludeGitIgnore": true,
     "files.autoSave": "onFocusChange",
@@ -18,15 +21,17 @@
     "files.trimTrailingWhitespace": true,
     "git.autoStash": true,
     "redhat.telemetry.enabled": false,
+    "terminal.integrated.defaultProfile.linux": "fish",
     "vsicons.dontShowNewVersionMessage": true,
     "window.restoreWindows": "all",
     "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "fairyfloss",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "fairyfloss complete",
     "workbench.colorCustomizations": {
         "editor.findMatchBackground": "#ffb8d155",
     },
     "workbench.editor.tabSizing": "shrink",
+    "workbench.iconTheme": "vscode-icons",
+    "window.customTitleBarVisibility": "auto",
     "[html]": {
         "editor.formatOnType": false
     },
@@ -52,13 +57,17 @@
     "black-formatter.showNotifications": "onWarning",
     "isort.check": true,
     "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.preferDaemon": false,
     "mypy-type-checker.reportingScope": "workspace",
     "[ruby]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.autoClosingBrackets": "always",
         "editor.autoClosingQuotes": "always",
+        "editor.defaultFormatter": "misogi.ruby-rubocop",
     },
+    "ruby.useBundler": true,
+    "vscode-erb-beautify.keepBlankLines": 1,
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
         "editor.formatOnSave": false // Don't like its formatting
@@ -67,6 +76,7 @@
     "yaml.customTags": [
         "!reference sequence" // For gitlab-ci.yml
     ],
+    "html.format.wrapLineLength": 0,
     "gitlens.menus": {
         "editor": {
             "blame": true,
