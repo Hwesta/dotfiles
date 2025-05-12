@@ -1,8 +1,13 @@
 {
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "cSpell.diagnosticLevel": "Hint",
     "cSpell.language": "en,en-CA,en-US",
     "debug.allowBreakpointsEverywhere": true,
     "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.inlineValues": "off",
     "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+    "debug.showVariableTypes": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": true,
@@ -14,6 +19,15 @@
     ],
     "editor.wordWrap": "on",
     "editor.wrappingIndent": "indent",
+    "editor.semanticTokenColorCustomizations": {
+        "[Cherry Blossom Sky]": {
+            "rules": {
+                // "module": "#30a769"
+                "module": "#e451bd",
+                "class": "#a71731"
+            },
+        }
+    },
     "explorer.autoReveal": false,
     "explorer.excludeGitIgnore": true,
     "files.autoSave": "onFocusChange",
@@ -34,6 +48,9 @@
     "window.customTitleBarVisibility": "auto",
     "[html]": {
         "editor.formatOnType": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
         "files.trimTrailingWhitespace": false
@@ -73,6 +90,9 @@
         "editor.formatOnSave": false // Don't like its formatting
     },
     "sql-formatter.uppercase": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "yaml.customTags": [
         "!reference sequence" // For gitlab-ci.yml
     ],

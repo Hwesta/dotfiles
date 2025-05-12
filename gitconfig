@@ -24,6 +24,7 @@
 	rbc = rebase --continue
 	rbab = rebase --abort
 	rbasq = rebase -i --autosquash
+	amend = commit --amend
 [fetch]
 	prune = true
 [pull]
