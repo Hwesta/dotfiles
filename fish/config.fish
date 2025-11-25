@@ -21,11 +21,11 @@ if status --is-interactive
 end
 
 # NPM
-set -xg NPM_PACKAGES $HOME/.npm-packages
-set -xg NODE_PATH $NPM_PACKAGES/lib/node_modules $NODE_PATH
-set -xg PATH $NPM_PACKAGES/bin $PATH
+#set -xg NPM_PACKAGES $HOME/.npm-packages
+#set -xg NODE_PATH $NPM_PACKAGES/lib/node_modules $NODE_PATH
+#set -xg PATH $NPM_PACKAGES/bin $PATH
 
 set -xg PATH ~/bin/ ~/.local/bin $PATH
 
 # starship
-starship init fish | source
+#starship init fish | source
