@@ -80,4 +80,24 @@
         "key": "ctrl+d",
         "command": "editor.action.addSelectionToNextFindMatch"
     },
+    {
+        "key": "ctrl+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "ctrl+k u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+k l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "f10",
+        "command": "editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    }
 ]
