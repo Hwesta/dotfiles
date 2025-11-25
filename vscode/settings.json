@@ -1,6 +1,7 @@
 {
     "chat.agent.enabled": false,
     "chat.commandCenter.enabled": false,
+    "chat.disableAIFeatures": true,
     "cSpell.diagnosticLevel": "Hint",
     "cSpell.language": "en,en-CA,en-US",
     "debug.allowBreakpointsEverywhere": true,
@@ -25,7 +26,7 @@
                 // "module": "#30a769"
                 "module": "#e451bd",
                 "class": "#a71731"
-            },
+            }
         }
     },
     "explorer.autoReveal": false,
@@ -39,15 +40,17 @@
     "vsicons.dontShowNewVersionMessage": true,
     "window.restoreWindows": "all",
     "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "fairyfloss complete",
+    "workbench.colorTheme": "Cherry Blossom Sky",
     "workbench.colorCustomizations": {
         "editor.findMatchBackground": "#ffb8d155",
     },
     "workbench.editor.tabSizing": "shrink",
     "workbench.iconTheme": "vscode-icons",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "window.customTitleBarVisibility": "auto",
     "[html]": {
-        "editor.formatOnType": false
+        "editor.formatOnType": false,
+        "editor.formatOnSave": false
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
