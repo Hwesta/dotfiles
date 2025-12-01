@@ -10,7 +10,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
-	commentChar = auto
 [alias]
 	st = status
 	co = checkout
