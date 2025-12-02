@@ -1,22 +1,19 @@
-Auto Add Brackets in String Interpolation
+Auto Add Brackets in String Interpolation (aliariff.auto-add-brackets)
+Black Formatter (ms-python.black-formatter)
+Cherry Blossom Theme (daitsuku.cherry-blossom-vscode-theme)
+Code Spell Checker (streetsidesoftware.code-spell-checker)
 Docker
 DotENV
-endwise
 ERB Formatter/Beautify
 fairyfloss
-GitLens
+GitLens (eamodio.gitlens)
 Highlight Dodgy Characters
-Python
-Rails
-Rainbow CSV
-Ruby
-Ruby Haml
-Ruby Language Colorization
-Ruby on Rails
-Ruby Solargraph
-ruby-rubocop
-ruby-symbols
-Sublime Text Keymap and Settings
-vscode-gemfile
-vscode-icons
+isort (ms-python.isort)
+mypy type checker (ms-python.mypy-type-checker)
+Python (ms-python.python)
+Python Debugger (ms-python.debugpy)
+Rails (bung87.rails)
+Rainbow CSV (mechatroner.rainbow-csv)
+Ruby LSP (Shopify.ruby-lsp)
+Rubocop (rubocop.vscode-rubocop)
 YAML
